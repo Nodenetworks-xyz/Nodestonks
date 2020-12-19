@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    outline: none !important;
+    background: #fffffff5;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+html::-webkit-scrollbar {
+    display: none !important;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a:hover {
+    color: rgb(95, 95, 95) !important;
+}
+
+.header-of-homepage {
+    width: 100%;
+    height: 100vh;
+    background: url(../IMG/Homepage_background4.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.node-newtworks-logo-image {
+    border-radius: 100%;
+}
+
+.overlay::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.navbar-main {
+    z-index: 22 !important;
+}
+
+.home-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    z-index: 15;
+}
+
+.home-content>h1 {
+    padding-bottom: 1.5rem;
+    font-family: 'Domine', serif;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
+}
+
+.home-content>p {
+    max-width: 50rem;
+    background: linear-gradient(to top left, #2222229a 0%, #22222248 100%);
+    padding: 1rem;
+    border-radius: 999999px;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav ul {
+    background: #496dd9;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+    ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+
+/*---------------- PLANS CSS -----------------*/
+.container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-col>h1 {
+    margin-top: 5rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    font-family: 'Domine', serif;
+    letter-spacing: 0.1rem;
+}
+
+.card-col>h1>span {
+    color: #e0b21a;
+}
+
+.card-col>p {
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+}
+
+.middle-card {
+    transform: scale(1.15);
+}
+
+.card-icon {
+    color: #e0b21a;
+    padding: 1rem;
+    border-radius: 100%;
+    background: linear-gradient(to top left, #505050 20%, #e4e4e4 100%);
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+
+.card-upperPart {
+    background: linear-gradient(to top, #496dd9c9 50%, rgba(255, 255, 255, 0.589) 50%);
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-body-text-content {
+    /*border: 3px solid #6076b6 !important;*/
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(180, 180, 180, 0.3) 0px 1px 3px -1px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card-lower-part {
+    background-color: transparent !important;
+
+}
+
+.card-lower-part-li {
+    background-color: transparent !important;
+}
+
+.card-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-button {
+    border-radius: 999999px !important;
+    padding: 0.4rem 4rem !important;
+}
+
+.card-price {
+    color: rgb(0, 0, 0);
+}
+
+.card-price-span {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}

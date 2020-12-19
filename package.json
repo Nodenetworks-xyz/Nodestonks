@@ -1,0 +1,21 @@
+{
+  "name": "nodestonks",
+  "version": "1.0.0",
+  "description": "Nodestonks beta",
+  "main": "./src/main.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "coingecko-api": "^1.0.10",
+    "crypto-price": "0.0.6",
+    "discord-rpc": "^3.1.4",
+    "electron": "^11.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "NotCrazy",
+  "license": "MIT"
+}
